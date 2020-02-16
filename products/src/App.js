@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import api from './services/api';
+import Routes from './routes';
 
 import './styles.css'
 
@@ -10,7 +10,7 @@ const App = () => (
   <div classNmae="App">
 
     <Header />
-    <Main />
+    <Routes />
 
   </div>
 

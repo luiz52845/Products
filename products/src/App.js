@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+import api from './services/api';
 
-class App extends Component {
-  render() {
-    return (
-      <div classNmae="App">
-        <h1>Hellow Product</h1>
+import './styles.css'
 
-      </div>
-    )
-  }
+import Header from './compoments/header/index';
+import Main from './Pages/Main/index';
 
-}
+const App = () => (
+  <div classNmae="App">
+
+    <Header />
+    <Main />
+
+  </div>
+
+);
 
 export default App;

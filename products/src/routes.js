@@ -7,6 +7,7 @@ import product from "./Pages/product";
 import pesquisar from "./Pages/pesquisar";
 import historico from "./Pages/historico";
 import comprar from "./Pages/comprar";
+import Menu from './compoments/menu';
 
 
 
@@ -20,6 +21,7 @@ const Routes = () => (
       <Route path="/historico" component={historico}></Route>
       <Route path="/comprar" component={comprar}></Route>
     </Switch>
+    <Menu></Menu>
   </BrowserRouter>
 );
 

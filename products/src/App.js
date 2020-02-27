@@ -12,11 +12,11 @@ import Main from './Pages/Main/index';
 
 
 const App = () => (
-  <div classNmae="App">
+  <div className="App">
 
     <Header />
     <Routes />
-    <Menu />
+
   </div>
 
 );

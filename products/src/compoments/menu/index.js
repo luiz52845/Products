@@ -3,32 +3,38 @@ import { IoMdHome, IoMdSearch, IoMdQrScanner, IoMdList } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import pesquisar from '../../Pages/pesquisar/';
 
-
-
 import "./styles.css"
 
 const Menu = () =>
+
+
   <header id="menu" className="menu">
 
     <button className="menu">
-      Produtos <IoMdHome />
+      <Link to="/" className="menu">
+        Produtos <IoMdHome />
+      </Link>
     </button>
 
     <button className="menu">
-      Pesquisar<IoMdSearch />
+      <Link to="/pesquisar" className="menu">
+        Pesquisar<IoMdSearch />
+      </Link>
     </button>
-
 
     <button className="menu">
-      Historico <IoMdList />
+      <Link to="/historico" className="menu">
+        Historico <IoMdList />
+      </Link>
     </button>
-
 
     <button className="menu">
-      Comprar <IoMdQrScanner />
+      <Link to="/comprar" className="menu">
+        Comprar <IoMdQrScanner />
+      </Link>
     </button>
 
-  </header>
+  </header >
 
 
 export default Menu;
